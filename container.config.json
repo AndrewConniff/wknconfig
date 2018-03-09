@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "lastChanged": "2018-03-06T05:37:58.7698259Z",
+  "created": "2017-06-12T18:13:00.4228426Z",
+  "appVersion": "1.0.0.0",
+  "dockerImages": [
+  	{
+  		"imageName": "mongo",
+		"runScript": "run -d -p 27017:27017 mongo",
+		"containerName": "mongo_wekan_container"
+  	},
+  	{
+  		"imageName": "wekanteam/wekan",
+		"runScript": "run -d -e MONGO_URL=mongodb://172.17.02 -p 8080:80 -e ROOT_URL=http://localhost:8080 wekanteam/wekan",
+		"containerName": "wekan_container"
+  	}
+
+  ]
+}
