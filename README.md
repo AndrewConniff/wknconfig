@@ -1,0 +1,2 @@
+# wknconfig
+config temp home
