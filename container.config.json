@@ -5,13 +5,13 @@
   "appVersion": "1.0.0.0",
   "dockerImages": [
   	{
-  		"imageName": "mongo",
-		"runScript": "run \-d \-p 27017\:27017 mongo",
+  		"imageNameAndVersion": "mongo\:3.6.3-jessie",
+		"runScript": "run \-d \-p 27017\:27017 mongo\:3.6.3-jessie",
 		"containerName": "mongo_wekan_container"
   	},
   	{
-  		"imageName": "wekanteam/wekan",
-		"runScript": "run \-d \-e MONGO_URL=mongodb\://172.17.02 \-p 8080:80 \-e ROOT_URL\=http://localhost\:8080 wekanteam/wekan",
+  		"imageNameAndVersion": "wekanteam/wekan\:v.077",
+		"runScript": "run \-d \-e MONGO_URL=mongodb\://172.17.02 \-p 8080:80 \-e ROOT_URL\=http://localhost\:8080 wekanteam/wekan\:v.077",
 		"containerName": "wekan_container"
   	}
 
