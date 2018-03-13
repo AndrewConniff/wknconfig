@@ -1,8 +1,8 @@
 {
-  "version": 1.0.0.0,
+  "version": {"Major":1,"Minor":0,"Build":0,"Revision":0,"MajorRevision":0,"MinorRevision":0},
   "lastChanged": "2018-03-06T05:37:58.7698259Z",
   "created": "2017-06-12T18:13:00.4228426Z",
-  "appVersion": 1.0.0.0,
+  "appVersion":{"Major":1,"Minor":0,"Build":0,"Revision":0,"MajorRevision":0,"MinorRevision":0},
   "dockerImages": [
   	{
   		"imageNameAndVersion": "mongo\:3.6.3-jessie",
