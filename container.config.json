@@ -5,8 +5,8 @@
   "appVersion":{"Major":1,"Minor":0,"Build":0,"Revision":0,"MajorRevision":0,"MinorRevision":0},
   "dockerImages": [
   	{
-  		"imageNameAndVersion": "mongo\:3.6.3\-jessie",
-		"runScript": "run \-d \-p 27017\:27017 mongo\:3.6.3\-jessie",
+  		"imageNameAndVersion": "mongo\:[3.6.3-jessie]",
+		"runScript": "run \-d \-p 27017\:27017 mongo\:[3.6.3-jessie]",
 		"containerName": "mongo_wekan_container"
   	},
   	{
