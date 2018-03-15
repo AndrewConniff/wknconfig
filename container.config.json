@@ -6,12 +6,12 @@
   "dockerImages": [
   	{
   		"imageNameAndVersion": "mongo:3.6.3-jessie",
-		"runScript": "run -d -p 27017:27017 mongo:3.6.3-jessie",
+		"RunArgs": "run -d -p 27017:27017 mongo:3.6.3-jessie",
 		"containerName": "mongo_wekan_container"
   	},
   	{
   		"imageNameAndVersion": "wekanteam/wekan:v0.77",
-		"runScript": "run -d -e MONGO_URL=mongodb://172.17.02 -p 8080:80 -e ROOT_URL=http://localhost:8080 wekanteam/wekan:v0.77",
+		"RunArgs": "run -d -e MONGO_URL=mongodb://172.17.02 -p 8080:80 -e ROOT_URL=http://localhost:8080 wekanteam/wekan:v0.77",
 		"containerName": "wekan_container"
   	}
 
