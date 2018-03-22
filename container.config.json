@@ -15,7 +15,7 @@
   "MongoImageName": "mongo:3.6.3-jessie",
   "MongoRunArgs": "run -d -p 27017:27017",
   "MongoContainerName": "mongo_wekan_container",
-  "WekanImageName": "wekanteam/wekan:v0.77",
+  "WekanImageName": "wekanteam/wekan",
   "WekanRunArgs": "run -d -e MONGO_URL=mongodb://172.17.02 -p 8080:80 -e ROOT_URL=http://localhost:8080",
   "WekanContainerName": "wekan_container"
 }
