@@ -1,21 +1,26 @@
-{
-  "LastChanged": "2018-03-21T23:13:36.2174683-07:00",
-  "Created": "2018-03-21T23:13:36.2174683-07:00",
-  "AppVersion": {
-    "Major": 1,
-    "Minor": 0,
-    "Build": 0,
-    "Revision": 0,
-    "MajorRevision": 0,
-    "MinorRevision": 0
-  },
-  "MailToUrl": "mailto:example@NoEmail.com?subject=SubjectExample&amp;body=BodyExample",
-  "AzureFaqUrl": "https://Microsoft.com",
-  "LocalFaqUrl": "https://Microsoft.com",
-  "MongoImageName": "mongo:3.6.3-jessie",
-  "MongoRunArgs": "run -d -p 27017:27017",
-  "MongoContainerName": "mongo_wekan_container",
-  "WekanImageName": "wekanteam/wekan:v0.77",
-  "WekanRunArgs": "run -d -e MONGO_URL=mongodb://172.17.02 -p 8080:80 -e ROOT_URL=http://localhost:8080",
-  "WekanContainerName": "wekan_container"
+{  
+   "Version":"1.0.0.0",
+   "LastChanged":"2018-03-23T12:30:39.4376473-07:00",
+   "Created":"2018-03-23T12:30:39.4376473-07:00",
+   "AppVersion":"1.0.0.0",
+   "DockerInstallerLink":null,
+   "FaqUrl":{  
+      "MailToUrl":"mailto:example@NoEmail.com?subject=SubjectExample&amp;body=BodyExample",
+      "Azure":"https://Microsoft.com",
+      "Local":"https://Microsoft.com"
+   },
+   "DockerImages":[  
+      {  
+         "ImageNameAndVersion":"mongo:3.6.3-jessie",
+         "RunArgs":"run -d -p 27017:27017",
+         "ContainerName":"mongo_wekan_container",
+         "Name":"mongo"
+      },
+      {  
+         "ImageNameAndVersion":"wekanteam/wekan:v0.77",
+         "RunArgs":"run -d -e MONGO_URL=mongodb://172.17.02 -p 8080:80 -e ROOT_URL=http://localhost:8080",
+         "ContainerName":"wekan_container",
+         "Name":"wekan"
+      }
+   ]
 }
